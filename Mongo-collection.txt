@@ -1,0 +1,110 @@
+Student Collection
+-------------------
+
+db.Student.InsertMany([
+	{
+	"Student_name": "Kewal",
+	"age": 25
+	"email": "kewal@gmail.com",
+	"contact": 7894561230,
+	"course_enrolled": "FullStack Web Development"
+	},
+	{
+	"Student_name": "Sam",
+	"age": 24
+	"email": "sam@gmail.com",
+	"contact": 5469871230,
+	"course_enrolled": "Data Science"
+	},
+	{
+	"Student_name": "Ram",
+	"age": 26
+	"email": "ram@gmail.com",
+	"contact": 3579514862,
+	"course_enrolled": "FullStack Web Development"
+	},
+	{
+	"Student_name": "Hari",
+	"age": 25
+	"email": "hari@gmail.com",
+	"contact": 258963147,
+	"course_enrolled": "FullStack Web Development"
+	}
+])
+
+
+Batch collection
+-----------------
+
+db.Batch.insertMany([
+	{
+	"batch_name": "B28 WD",
+	"batch_type": "weekday",
+	"batch_strength": 56,
+	"batch_mentors": ["raghav", "suman"]
+	},
+	{
+	"batch_name": "B29 WE",
+	"batch_type": "weekend",
+	"batch_strength": 91,
+	"batch_mentors": ["sonali", "veer"]
+	},
+	{
+	"batch_name": "B30 WE",
+	"batch_type": "weekend",
+	"batch_strength":85,
+	"batch_mentors": ["raghav", "veer"]
+	}
+])
+
+
+Task collection
+---------------
+
+db.Task.insertMany([
+	{
+	"task_date": "21/02/2020",
+	"task_name": "Node file system",
+	"task_source_link": "https://task-link.heroku.com",	
+	},
+	{
+	"task_date": "23/02/2020",
+	"task_name": "Shop cart snippet",
+	"task_source_link": "https://task2-link.netlify.com",	
+	},
+	{
+	"task_date": "30/03/2020",
+	"task_name": "URL shortener application",
+	"task_source_link": "https://task3-link.heroku.com",
+	"task_frontend_link": "https://task3-link.netlify.com"	
+	},
+])
+
+
+Mentor collection
+-----------------
+
+db.Mentor.insertMany([
+	{
+	"mentor_name": "raghav",
+	"mentor_batch": ["B28WD", "B30WE"]
+	"mentor_contact": 525874931,
+	},
+	{
+	"mentor_name": "suman",
+	"mentor_batch": ["B28WD", "B29WD"]
+	"mentor_contact": 5647893321,
+	},
+	{
+	"mentor_name": "veer",
+	"mentor_batch": ["B12WD", "B40WE"]
+	"mentor_contact": 7896541230,
+	},
+])
+
+
+
+
+
+
+
